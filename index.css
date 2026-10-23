@@ -1,0 +1,51 @@
+:root,
+[data-bs-theme=dark] {
+    --bs-primary: #8a7050;
+    --bs-primary-rgb: 138, 112, 80;
+    --bs-link-color: #d4b98a;
+    --bs-link-color-rgb: 212, 185, 138;
+    --bs-link-hover-color: #e6d2ad;
+    --bs-link-hover-color-rgb: 230, 210, 173;
+}
+
+[data-bs-theme=dark] {
+    --bs-body-bg: #1a0b0b;
+    --bs-body-bg-rgb: 26, 11, 11;
+    --bs-border-color: rgba(var(--bs-link-color-rgb), 0.4);
+    --bs-border-color-translucent: var(--bs-border-color);
+}
+
+html {
+    scroll-padding-top: 5rem;
+}
+
+.btn-primary {
+    --bs-btn-bg: #8a7050;
+    --bs-btn-border-color: #8a7050;
+    --bs-btn-hover-bg: #7a6246;
+    --bs-btn-hover-border-color: #7a6246;
+    --bs-btn-active-bg: #6e583f;
+    --bs-btn-active-border-color: #6e583f;
+}
+
+.calendar {
+    table-layout: fixed;
+}
+
+.calendar td {
+    height: 5rem;
+}
+
+.calendar .event {
+    background-color: var(--bs-primary);
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.calendar .event:hover {
+    background-color: #6e583f;
+}
+
+.calendar small {
+    font-weight: normal;
+}

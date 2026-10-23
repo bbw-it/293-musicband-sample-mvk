@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt - Ad Infinitum</title>
+  <link href="assets/img/icon.png" rel="icon" type="image/png">
+  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+</head>
+<body data-bs-theme="dark">
+  <main class="container col-md-8 col-lg-6 my-4">
+    <a class="btn btn-link px-0" href="index.html">&larr; Zurück</a>
+    <h1>Kontakt</h1>
+    <form>
+      <div class="mb-3">
+        <label for="email" class="form-label">Deine E-Mail</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Nachricht</label>
+        <textarea class="form-control" id="message" rows="6" minlength="10" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="images" class="form-label">Bilder</label>
+        <input type="file" class="form-control" id="images" accept="image/*" multiple>
+      </div>
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="privacy" required>
+        <label for="privacy" class="form-check-label">Ich akzeptiere die Datenschutzerklärung</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Senden</button>
+      <a class="btn btn-secondary" href="index.html">Abbrechen</a>
+    </form>
+  </main>
+</body>
+</html>
